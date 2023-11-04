@@ -1,35 +1,27 @@
 public class RotateNum {
 
     public static void rotation(int num, int rot) {
-
-        int rotatedValue = 0;
-        int answer = 0;
         int value = num;
-        int length = 0;
-        while (rot != 0) {
-
-            int rem = num % 10;
-            rotatedValue = rotatedValue * 10 + rem;
-            value = value /10;
-
-            rot--;
+        int numOfDigit = 0;
+        while (num != 0) {
+            num = num / 10;
+            numOfDigit++;
         }
 
-        while(value != 0){
-            value = value /10;
-            length++;
-        }
+        int rem = value % (int) Math.pow(10, rot);
 
-        answer = rotatedValue * (int) Math.pow(10, length) + value;
+        int mul = (int) Math.pow(10, numOfDigit - rot);
+        value = value / (int) Math.pow(10, rot);
+       
+        int rotatedNum = rem * mul + value ;
 
-        System.err.println(answer);
-        
+        System.err.println(rotatedNum);
 
     }
 
     public static void main(String[] args) {
 
-        rotation(21534, 2);
+        rotation(21534, 3);
 
     }
 }
