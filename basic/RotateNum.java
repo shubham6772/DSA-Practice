@@ -8,20 +8,26 @@ public class RotateNum {
             numOfDigit++;
         }
 
-        int rem = value % (int) Math.pow(10, rot);
+        if (rot > numOfDigit) {
 
-        int mul = (int) Math.pow(10, numOfDigit - rot);
-        value = value / (int) Math.pow(10, rot);
-       
-        int rotatedNum = rem * mul + value ;
+            System.out.println(value);
 
-        System.err.println(rotatedNum);
+        } else {
+            int rem = value % (int) Math.pow(10, rot);
+
+            int mul = (int) Math.pow(10, numOfDigit - rot);
+            value = value / (int) Math.pow(10, rot);
+
+            int rotatedNum = rem * mul + value;
+
+            System.err.println(rotatedNum);
+        }
 
     }
 
     public static void main(String[] args) {
 
-        rotation(21534, 3);
+        rotation(21534, 6);
 
     }
 }
