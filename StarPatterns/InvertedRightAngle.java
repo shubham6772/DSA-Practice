@@ -1,3 +1,4 @@
+package StarPatterns;
 import java.util.*;
 
 public class InvertedRightAngle {
