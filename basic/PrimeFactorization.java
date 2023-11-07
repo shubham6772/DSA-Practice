@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class PrimeFactorization {
+public class PrimeFactorization{
     
     public static void primeFact(int value){
           for(int i=2 ; i * i <= value   ; i++){

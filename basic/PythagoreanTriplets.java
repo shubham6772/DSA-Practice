@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class PythagoreanTriplets{
+public class PythagoreanTriplets {
     
     public static void triplets(int x, int y, int z){
         int temp = x*x + y*y;
