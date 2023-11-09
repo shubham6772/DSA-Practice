@@ -1,11 +1,16 @@
 package StarPatterns;
 import java.util.*;
 
+                                                                        //                  *
+                                                                        //              *   *
+                                                                        //          *   *   *
+                                                                        //      *   *   *   *
+                                                                        // *    *   *   *   *
 
 public class RightAngle {
 
     public static void printRightAngle(int x) {
-        
+                                                                       
         int space = x-1;
         int star = 1;
         for(int i=1; i<=x; i++){

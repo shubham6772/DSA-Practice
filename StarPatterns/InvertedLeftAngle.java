@@ -2,9 +2,15 @@ package StarPatterns;
 
 import java.util.*;
 
+                                                                                        //  *   *   *   *   * 
+                                                                                        //  *   *   *   *
+                                                                                        //  *   *   *
+                                                                                        //  *   *   
+                                                                                        //  *
+
 public class InvertedLeftAngle {
 
-    
+
     public static void printRightPattern(int x) {
         for (int i = x; i >= 1; i--) {
             for (int j = 1; j <= i; j++) {
