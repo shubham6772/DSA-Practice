@@ -14,6 +14,7 @@ public class SpanOfArray {
         System.err.println("Your span is : " +val);
     }
 
+
     public static void spanWithoutSort(int arr[], int size){
 
         int small = arr[0];
@@ -33,6 +34,7 @@ public class SpanOfArray {
         System.out.println("Your value is: " + result);
     }
 
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -49,6 +51,5 @@ public class SpanOfArray {
         spanWithoutSort(arr, size);
 
         sc.close();
-
     }
 }
