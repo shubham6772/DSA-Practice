@@ -1,4 +1,4 @@
-package Arrays;
+package Stack;
 
 import java.util.*;
 
