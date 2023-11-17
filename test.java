@@ -1,12 +1,12 @@
+import java.util.*;
+
 public class test {
+
 
     public static void main(String[] args) {
 
-        int a[] = new int[5];
+       Stack<Integer> st = new Stack<>();
 
-        for (int val : a) {
-            System.out.println(val);
-        }
-
+       System.out.println();
     }
 }
